@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>TestTask</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="layoutWidget">
@@ -19,8 +19,8 @@
      <rect>
       <x>20</x>
       <y>20</y>
-      <width>241</width>
-      <height>511</height>
+      <width>181</width>
+      <height>591</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -34,7 +34,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Список таблиц:</string>
+        <string>Список таблиц</string>
        </property>
       </widget>
      </item>
@@ -43,25 +43,63 @@
      </item>
     </layout>
    </widget>
-   <widget class="QTableView" name="table_values_view">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>265</x>
-      <y>21</y>
-      <width>321</width>
-      <height>511</height>
+      <x>205</x>
+      <y>20</y>
+      <width>331</width>
+      <height>591</height>
      </rect>
     </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Значения таблицы</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableView" name="table_values_view"/>
+     </item>
+    </layout>
    </widget>
-   <widget class="QGraphicsView" name="graphics_view">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>21</y>
-      <width>601</width>
-      <height>511</height>
+      <x>541</x>
+      <y>22</y>
+      <width>661</width>
+      <height>591</height>
      </rect>
     </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Графическое представление</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QChartView" name="chart_view" native="true"/>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -76,6 +114,14 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QWidget</extends>
+   <header location="global">qchartview.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

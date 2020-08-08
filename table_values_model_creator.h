@@ -2,6 +2,7 @@
 #define TABLEVALUESMODELCREATOR_H
 
 #include "imodel_creator.h"
+#include <QDateTime>
 
 class TableValuesModelCreator : public IModelCreator {
 public:
@@ -9,6 +10,7 @@ public:
     ~TableValuesModelCreator();
 
     int create_model() override;
+    void update_model(const QString& table_name) override;
 };
 
 #endif // TABLEVALUESMODELCREATOR_H

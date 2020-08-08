@@ -1,4 +1,4 @@
-QT       += core gui sql
+QT       += core gui sql charts
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -16,20 +16,26 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    bar_series_creator.cpp \
     config_reader.cpp \
     graphic_model_creator.cpp \
     imodel_creator.cpp \
+    iseries_creator.cpp \
     main.cpp \
     mainwindow.cpp \
+    spline_series_creator.cpp \
     sql_driver.cpp \
     table_names_model_creator.cpp \
     table_values_model_creator.cpp
 
 HEADERS += \
+    bar_series_creator.h \
     config_reader.h \
     graphic_model_creator.h \
     imodel_creator.h \
+    iseries_creator.h \
     mainwindow.h \
+    spline_series_creator.h \
     sql_driver.h \
     table_names_model_creator.h \
     table_values_model_creator.h

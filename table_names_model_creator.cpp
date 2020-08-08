@@ -6,9 +6,10 @@ TableNamesModelCreator::~TableNamesModelCreator() {}
 
 int TableNamesModelCreator::create_model() {
     model = new QStringListModel();
-    driver = new SqlDriver();
 
-    static_cast<QStringListModel*>(model)->setStringList(driver->get_db_table_names());
+    static_cast<QStringListModel*>(model)->setStringList(driver->get_instance()->get_db_table_names());
     return 0;
 }
+
+void TableNamesModelCreator::update_model(const QString &table_name) {}
 

@@ -10,6 +10,7 @@ public:
     ~TableNamesModelCreator();
 
     int create_model() override;
+    void update_model(const QString& table_name);
 };
 
 #endif // TABLENAMESMODELCREATOR_H

@@ -3,8 +3,7 @@
 IModelCreator::IModelCreator() {}
 
 IModelCreator::~IModelCreator() {
-    delete driver;
-    delete model;
+//    delete model;
 }
 
 QAbstractItemModel *IModelCreator::get_model() const {
